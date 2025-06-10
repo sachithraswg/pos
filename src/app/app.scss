@@ -40,7 +40,7 @@
   flex-direction: row;
   gap: 4px;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -454,4 +454,9 @@
   font-weight: 500;
   position: relative;
   align-self: stretch;
+}
+
+.content {
+  display: block;
+  flex: 1;
 }
