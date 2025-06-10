@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected title = 'pos';
+
+  constructor(private router: Router) {}
+
+  navigate(path: string): void {
+    this.router.navigateByUrl(path);
+  }
 }
