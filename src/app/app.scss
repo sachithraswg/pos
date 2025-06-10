@@ -109,7 +109,6 @@
   position: relative;
 }
 .depth-7-frame-0 {
-  background: #e5e8f5;
   border-radius: 20px;
   padding: 8px 12px 8px 12px;
   display: flex;
@@ -460,4 +459,18 @@
   display: block;
   flex: 1;
   max-width: 100%;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #e5e8f5;
+  border-radius: 20px;
+}
+
+.menu-item.selected {
+  background: #e5e8f5;
+  border-radius: 20px;
 }
