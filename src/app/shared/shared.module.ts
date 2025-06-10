@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExampleInputComponent } from './components/example-input/example-input.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  declarations: [ExampleInputComponent],
-  exports: [CommonModule, FormsModule, ReactiveFormsModule, ExampleInputComponent]
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ExampleInputComponent],
+  declarations: [],
+  exports: [ExampleInputComponent]
 })
 export class SharedModule {}
