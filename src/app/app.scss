@@ -35,15 +35,15 @@
   position: relative;
 }
 .depth-2-frame-0 {
-  padding: 20px 24px 20px 24px;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex: 1;
-  position: relative;
+    /* padding: 20px 24px 20px 24px; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 4px; */
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    /* align-self: stretch; */
+    flex: 1;
+    position: relative;
 }
 .depth-3-frame-0 {
   display: flex;
@@ -459,4 +459,5 @@
 .content {
   display: block;
   flex: 1;
+  max-width: 100%;
 }
