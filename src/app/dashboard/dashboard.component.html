@@ -1,0 +1,18 @@
+<div class="dashboard-grid" *ngIf="metrics">
+  <div class="card">
+    <h3>Daily Revenue</h3>
+    <p>{{ metrics.dailyRevenue | currency }}</p>
+  </div>
+  <div class="card">
+    <h3>Active Patients</h3>
+    <p>{{ metrics.activePatients }}</p>
+  </div>
+  <div class="card">
+    <h3>Low Stock Alerts</h3>
+    <p>{{ metrics.lowStockAlerts }}</p>
+  </div>
+  <div class="card">
+    <h3>Upcoming Appointments</h3>
+    <p>{{ metrics.upcomingAppointments }}</p>
+  </div>
+</div>
