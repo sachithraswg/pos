@@ -172,11 +172,11 @@
     }
   }
 }
-.stitch-design,
-.stitch-design * {
+.page-wrapper,
+.page-wrapper * {
   box-sizing: border-box;
 }
-.stitch-design {
+.page-wrapper {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -185,7 +185,7 @@
   justify-content: flex-start;
   position: relative;
 }
-.depth-0-frame-0 {
+.page-content {
   background: #f7fafc;
   display: flex;
   flex-direction: column;
@@ -198,7 +198,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-1-frame-0 {
+.content-section {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -208,7 +208,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-2-frame-0 {
+.header-bar {
     /* padding: 20px 24px 20px 24px; */
     display: flex;
     flex-direction: row;
@@ -219,7 +219,7 @@
     flex: 1;
     position: relative;
 }
-.depth-3-frame-0 {
+.layout-layer3-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -230,7 +230,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-4-frame-0 {
+.layout-layer4-element0 {
   background: #f7fafc;
   padding: 16px;
   display: flex;
@@ -242,7 +242,7 @@
   min-height: 700px;
   position: relative;
 }
-.depth-5-frame-0 {
+.layout-layer5-element0 {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -252,7 +252,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-6-frame-0 {
+.layout-layer6-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -272,7 +272,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-6-frame-1 {
+.layout-layer6-element1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -282,7 +282,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-7-frame-0 {
+.layout-layer7-element0 {
   border-radius: 20px;
   padding: 8px 12px 8px 12px;
   display: flex;
@@ -294,7 +294,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-0 {
+.layout-layer8-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -303,7 +303,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-9-frame-0 {
+.layout-layer9-element0 {
   flex: 1;
   width: 24px;
   position: relative;
@@ -317,7 +317,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-0 {
+.layout-layer10-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -329,7 +329,7 @@
   left: 0px;
   top: 0px;
 }
-.depth-8-frame-1 {
+.layout-layer8-element1 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -348,7 +348,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-1 {
+.layout-layer7-element1 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -367,7 +367,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-02 {
+.layout-layer10-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -389,7 +389,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-2 {
+.layout-layer7-element2 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -408,7 +408,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-03 {
+.layout-layer10-element03 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -430,7 +430,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-3 {
+.layout-layer7-element3 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -449,7 +449,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-04 {
+.layout-layer10-element04 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -471,7 +471,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-4 {
+.layout-layer7-element4 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -490,7 +490,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-05 {
+.layout-layer10-element05 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -512,7 +512,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-5 {
+.layout-layer7-element5 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -531,7 +531,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-06 {
+.layout-layer10-element06 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -553,7 +553,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-5-frame-1 {
+.layout-layer5-element1 {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -563,7 +563,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-6-frame-02 {
+.layout-layer6-element02 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -574,7 +574,7 @@
   flex: 1;
   position: relative;
 }
-.depth-7-frame-02 {
+.layout-layer7-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -583,7 +583,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-02 {
+.layout-layer8-element02 {
   flex: 1;
   width: 24px;
   position: relative;
@@ -597,7 +597,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-9-frame-02 {
+.layout-layer9-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -609,7 +609,7 @@
   left: 0px;
   top: 0px;
 }
-.depth-7-frame-12 {
+.layout-layer7-element12 {
   display: flex;
   flex-direction: column;
   gap: 0px;
