@@ -1,8 +1,8 @@
-.stitch-design,
-.stitch-design * {
+.page-wrapper,
+.page-wrapper * {
   box-sizing: border-box;
 }
-.stitch-design {
+.page-wrapper {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   justify-content: flex-start;
   position: relative;
 }
-.depth-0-frame-0 {
+.page-content {
   background: #f7fafc;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-1-frame-0 {
+.content-section {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -34,7 +34,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-2-frame-0 {
+.header-bar {
   padding: 20px 24px 20px 24px;
   display: flex;
   flex-direction: row;
@@ -45,7 +45,7 @@
   flex: 1;
   position: relative;
 }
-.depth-3-frame-0 {
+.layout-layer3-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -56,7 +56,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-4-frame-0 {
+.layout-layer4-element0 {
   background: #f7fafc;
   padding: 16px;
   display: flex;
@@ -68,7 +68,7 @@
   min-height: 700px;
   position: relative;
 }
-.depth-5-frame-0 {
+.layout-layer5-element0 {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -78,7 +78,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-6-frame-0 {
+.layout-layer6-element0 {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -88,7 +88,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-7-frame-0 {
+.layout-layer7-element0 {
   border-radius: 20px;
   flex-shrink: 0;
   width: 40px;
@@ -97,7 +97,7 @@
   overflow: hidden;
   object-fit: cover;
 }
-.depth-7-frame-1 {
+.layout-layer7-element1 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -117,7 +117,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-6-frame-1 {
+.layout-layer6-element1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -127,7 +127,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-7-frame-02 {
+.layout-layer7-element02 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -138,7 +138,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-0 {
+.layout-layer8-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -147,7 +147,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-9-frame-0 {
+.layout-layer9-element0 {
   flex: 1;
   width: 24px;
   position: relative;
@@ -161,7 +161,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-0 {
+.layout-layer10-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -173,7 +173,7 @@
   left: 0px;
   top: 0px;
 }
-.depth-8-frame-1 {
+.layout-layer8-element1 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -192,7 +192,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-12 {
+.layout-layer7-element12 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -211,7 +211,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-02 {
+.layout-layer10-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -233,7 +233,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-2 {
+.layout-layer7-element2 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -252,7 +252,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-03 {
+.layout-layer10-element03 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -274,7 +274,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-3 {
+.layout-layer7-element3 {
   background: #e5e8f5;
   border-radius: 8px;
   padding: 8px 12px 8px 12px;
@@ -295,7 +295,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-04 {
+.layout-layer10-element04 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -317,7 +317,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-4 {
+.layout-layer7-element4 {
   padding: 8px 12px 8px 12px;
   display: flex;
   flex-direction: row;
@@ -336,7 +336,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-10-frame-05 {
+.layout-layer10-element05 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -358,7 +358,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-3-frame-1 {
+.layout-layer3-element1 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -370,7 +370,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-4-frame-02 {
+.layout-layer4-element02 {
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -383,7 +383,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-5-frame-02 {
+.layout-layer5-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -404,7 +404,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-5-frame-1 {
+.layout-layer5-element1 {
   background: #e5e8f5;
   border-radius: 8px;
   padding: 0px 16px 0px 16px;
@@ -421,7 +421,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-6-frame-02 {
+.layout-layer6-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -444,7 +444,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-4-frame-1 {
+.layout-layer4-element1 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -455,7 +455,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-5-frame-03 {
+.layout-layer5-element03 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -467,7 +467,7 @@
   min-width: 160px;
   position: relative;
 }
-.depth-6-frame-03 {
+.layout-layer6-element03 {
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -478,7 +478,7 @@
   flex: 1;
   position: relative;
 }
-.depth-7-frame-03 {
+.layout-layer7-element03 {
   background: #e5e8f5;
   border-radius: 8px 0px 0px 8px;
   padding: 0px 0px 0px 16px;
@@ -491,7 +491,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-02 {
+.layout-layer8-element02 {
   flex: 1;
   height: 24px;
   position: relative;
@@ -505,7 +505,7 @@
   top: 0px;
   overflow: visible;
 }
-.depth-9-frame-02 {
+.layout-layer9-element02 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -517,7 +517,7 @@
   left: 0px;
   top: 0px;
 }
-.depth-7-frame-13 {
+.layout-layer7-element13 {
   background: #e5e8f5;
   border-radius: 0px 8px 8px 0px;
   padding: 8px 16px 8px 8px;
@@ -540,7 +540,7 @@
   font-weight: 400;
   position: relative;
 }
-.depth-4-frame-2 {
+.layout-layer4-element2 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -551,7 +551,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-5-frame-04 {
+.layout-layer5-element04 {
   background: #f7fafc;
   border-radius: 8px;
   border-style: solid;
@@ -567,7 +567,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-6-frame-04 {
+.layout-layer6-element04 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -576,7 +576,7 @@
   flex: 1;
   position: relative;
 }
-.depth-7-frame-04 {
+.layout-layer7-element04 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -586,7 +586,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-03 {
+.layout-layer8-element03 {
   background: #f7fafc;
   display: flex;
   flex-direction: row;
@@ -597,7 +597,7 @@
   flex: 1;
   position: relative;
 }
-.depth-9-frame-03 {
+.layout-layer9-element03 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -619,7 +619,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-1 {
+.layout-layer9-element1 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -641,7 +641,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-2 {
+.layout-layer9-element2 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -663,7 +663,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-3 {
+.layout-layer9-element3 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -685,7 +685,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-4 {
+.layout-layer9-element4 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -707,7 +707,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-5 {
+.layout-layer9-element5 {
   padding: 12px 16px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -729,7 +729,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-7-frame-14 {
+.layout-layer7-element14 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -739,7 +739,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.depth-8-frame-04 {
+.layout-layer8-element04 {
   border-style: solid;
   border-color: #e5e8eb;
   border-width: 1px 0px 0px 0px;
@@ -753,7 +753,7 @@
   height: 72px;
   position: relative;
 }
-.depth-9-frame-04 {
+.layout-layer9-element04 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -775,7 +775,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-12 {
+.layout-layer9-element12 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -797,7 +797,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-22 {
+.layout-layer9-element22 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -819,7 +819,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-9-frame-32 {
+.layout-layer9-element32 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -831,7 +831,7 @@
   height: 72px;
   position: relative;
 }
-.depth-10-frame-06 {
+.layout-layer10-element06 {
   background: #e5e8f5;
   border-radius: 8px;
   padding: 0px 16px 0px 16px;
@@ -848,7 +848,7 @@
   position: relative;
   overflow: hidden;
 }
-.depth-11-frame-0 {
+.layout-layer11-element0 {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -871,7 +871,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-9-frame-42 {
+.layout-layer9-element42 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -896,7 +896,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-9-frame-52 {
+.layout-layer9-element52 {
   padding: 8px 16px 8px 16px;
   display: flex;
   flex-direction: column;
@@ -918,7 +918,7 @@
   position: relative;
   align-self: stretch;
 }
-.depth-8-frame-12 {
+.layout-layer8-element12 {
   border-style: solid;
   border-color: #e5e8eb;
   border-width: 1px 0px 0px 0px;
@@ -975,7 +975,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-8-frame-2 {
+.layout-layer8-element2 {
   border-style: solid;
   border-color: #e5e8eb;
   border-width: 1px 0px 0px 0px;
@@ -1032,7 +1032,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-8-frame-3 {
+.layout-layer8-element3 {
   border-style: solid;
   border-color: #e5e8eb;
   border-width: 1px 0px 0px 0px;
@@ -1102,7 +1102,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.depth-8-frame-4 {
+.layout-layer8-element4 {
   border-style: solid;
   border-color: #e5e8eb;
   border-width: 1px 0px 0px 0px;
