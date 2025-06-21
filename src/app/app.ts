@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router, RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  constructor(private router: Router) {}
+  private router = inject(Router);
 
   protected title = 'pos';
 

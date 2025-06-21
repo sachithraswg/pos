@@ -29,7 +29,7 @@ export class DashboardComponent implements OnInit {
 
     this.dashboardService.getMetrics()
       .pipe(
-        catchError(error => {
+        catchError(() => {
           this.error.set('Failed to load dashboard metrics');
           return of(null);
         }),

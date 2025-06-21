@@ -1,3 +1,12 @@
-export interface Catalog_item {
-  // TODO: define properties
+export interface CatalogItem {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  category: string;
+  sku: string;
+  stockQuantity: number;
+  isActive: boolean;
+  createdAt: Date;
+  updatedAt: Date;
 }
