@@ -8,6 +8,10 @@ export const TREATMENT_ROUTES: Routes = [
     component: TreatmentListComponent
   },
   {
+    path: 'add',
+    component: TreatmentDetailComponent
+  },
+  {
     path: ':id',
     component: TreatmentDetailComponent
   }

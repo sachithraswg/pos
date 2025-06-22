@@ -4,7 +4,7 @@
       <div class="treatment-detail-form">
         <div class="form-header">
           <div class="form-title">
-            <div class="title-text">Add Treatment Record</div>
+            <div class="title-text">{{ pageTitle }}</div>
           </div>
         </div>
         <div class="form-section">
@@ -85,14 +85,26 @@
         </div>
         <div class="form-actions">
           <div class="action-buttons">
-            <div class="cancel-button">
+            <div class="cancel-button" 
+                 (click)="onCancel()" 
+                 (keydown.enter)="onCancel()" 
+                 (keydown.space)="onCancel()"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Cancel and return to treatment list">
               <div class="button-content">
                 <div class="button-text">Cancel</div>
               </div>
             </div>
-            <div class="save-button">
+            <div class="save-button" 
+                 (click)="onSave()" 
+                 (keydown.enter)="onSave()" 
+                 (keydown.space)="onSave()"
+                 tabindex="0"
+                 role="button"
+                 [attr.aria-label]="isAddMode ? 'Save new treatment' : 'Update treatment'">
               <div class="button-content">
-                <div class="button-text">Save</div>
+                <div class="button-text">{{ isAddMode ? 'Save' : 'Update' }}</div>
               </div>
             </div>
           </div>

@@ -6,7 +6,13 @@
           <div class="treatment-list-title">
             <div class="title-text">Treatment Records</div>
           </div>
-          <div class="add-treatment-button">
+          <div class="add-treatment-button" 
+               (click)="onAddTreatment()" 
+               (keydown.enter)="onAddTreatment()" 
+               (keydown.space)="onAddTreatment()"
+               tabindex="0"
+               role="button"
+               aria-label="Add new treatment">
             <div class="button-content">
               <div class="button-text">Add Treatment</div>
             </div>
@@ -90,7 +96,13 @@
                 <div class="cell-text">Scheduled</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('1')" 
+                     (keydown.enter)="onViewTreatment('1')" 
+                     (keydown.space)="onViewTreatment('1')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
             <div class="table-row">
@@ -113,7 +125,13 @@
                 <div class="cell-text">Completed</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('2')" 
+                     (keydown.enter)="onViewTreatment('2')" 
+                     (keydown.space)="onViewTreatment('2')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
             <div class="table-row">
@@ -136,7 +154,13 @@
                 <div class="cell-text">Not Required</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('3')" 
+                     (keydown.enter)="onViewTreatment('3')" 
+                     (keydown.space)="onViewTreatment('3')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
             <div class="table-row">
@@ -159,7 +183,13 @@
                 <div class="cell-text">Completed</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('4')" 
+                     (keydown.enter)="onViewTreatment('4')" 
+                     (keydown.space)="onViewTreatment('4')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
             <div class="table-row">
@@ -182,7 +212,13 @@
                 <div class="cell-text">Scheduled</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('5')" 
+                     (keydown.enter)="onViewTreatment('5')" 
+                     (keydown.space)="onViewTreatment('5')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
             <div class="table-row">
@@ -205,7 +241,13 @@
                 <div class="cell-text">Completed</div>
               </div>
               <div class="table-cell">
-                <div class="cell-text">View</div>
+                <div class="cell-text view-link" 
+                     (click)="onViewTreatment('6')" 
+                     (keydown.enter)="onViewTreatment('6')" 
+                     (keydown.space)="onViewTreatment('6')"
+                     tabindex="0"
+                     role="button"
+                     aria-label="View treatment details">View</div>
               </div>
             </div>
           </div>

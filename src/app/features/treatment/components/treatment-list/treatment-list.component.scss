@@ -411,4 +411,16 @@
   font-weight: 400;
   position: relative;
   align-self: stretch;
+}
+
+.view-link {
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
 } 
