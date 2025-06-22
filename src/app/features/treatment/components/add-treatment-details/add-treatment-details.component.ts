@@ -2,12 +2,12 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-treatment-detail',
-  templateUrl: './treatment-detail.component.html',
-  styleUrls: ['./treatment-detail.component.scss'],
+  selector: 'app-add-treatment-details',
+  templateUrl: './add-treatment-details.component.html',
+  styleUrls: ['./add-treatment-details.component.scss'],
   standalone: true
 })
-export class TreatmentDetailComponent implements OnInit {
+export class AddTreatmentDetailsComponent implements OnInit {
   private router = inject(Router);
   private route = inject(ActivatedRoute);
 

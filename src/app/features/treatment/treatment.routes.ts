@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { TreatmentListComponent } from './components/treatment-list/treatment-list.component';
-import { TreatmentDetailComponent } from './components/treatment-detail/treatment-detail.component';
+import { AddTreatmentDetailsComponent } from './components/add-treatment-details/add-treatment-details.component';
 
 export const TREATMENT_ROUTES: Routes = [
   {
@@ -9,10 +9,10 @@ export const TREATMENT_ROUTES: Routes = [
   },
   {
     path: 'add',
-    component: TreatmentDetailComponent
+    component: AddTreatmentDetailsComponent
   },
   {
     path: ':id',
-    component: TreatmentDetailComponent
+    component: AddTreatmentDetailsComponent
   }
 ]; 

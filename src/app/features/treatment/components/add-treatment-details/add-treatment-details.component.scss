@@ -1,9 +1,9 @@
-.treatment-detail-container,
-.treatment-detail-container * {
+.add-treatment-details-container,
+.add-treatment-details-container * {
   box-sizing: border-box;
 }
 
-.treatment-detail-container {
+.add-treatment-details-container {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.treatment-detail-page {
+.add-treatment-details-page {
   background: #f7fafc;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 
-.treatment-detail-content {
+.add-treatment-details-content {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -38,7 +38,7 @@
   position: relative;
 }
 
-.treatment-detail-form {
+.add-treatment-details-form {
   padding: 24px 40px;
   display: flex;
   flex-direction: column;
