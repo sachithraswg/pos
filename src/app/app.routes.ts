@@ -11,6 +11,11 @@ export const routes: Routes = [
     loadChildren: () => import('./features/dashboard/dashboard.routes').then(m => m.DASHBOARD_ROUTES)
   },
   {
+    path: 'users',
+    redirectTo: 'user-management',
+    pathMatch: 'full'
+  },
+  {
     path: 'user-management',
     loadChildren: () => import('./features/user-management/user-management.routes').then(m => m.USER_MANAGEMENT_ROUTES)
   },
