@@ -1,0 +1,150 @@
+<div class="treatment-history-container">
+  <div class="treatment-history-page">
+    <div class="treatment-history-content">
+      <!-- Header Section -->
+      <div class="treatment-history-header">
+        <div class="header-navigation">
+          <div class="back-button" 
+               (click)="onBackToList()" 
+               (keydown.enter)="onBackToList()" 
+               (keydown.space)="onBackToList()"
+               tabindex="0"
+               role="button"
+               aria-label="Back to treatment list">
+            <div class="button-content">
+              <div class="button-text">← Back to List</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-title-section">
+          <div class="animal-info">
+            <div class="animal-name">{{ animalName }}</div>
+            <div class="treatment-history-title">Treatment History</div>
+          </div>
+          <div class="add-treatment-button" 
+               (click)="onAddNewTreatment()" 
+               (keydown.enter)="onAddNewTreatment()" 
+               (keydown.space)="onAddNewTreatment()"
+               tabindex="0"
+               role="button"
+               aria-label="Add new treatment for this animal">
+            <div class="button-content">
+              <div class="button-text">Add Treatment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div class="loading-container" *ngIf="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading treatment history...</div>
+      </div>
+
+      <!-- Treatment Records -->
+      <div class="treatment-records-container" *ngIf="!loading">
+        <div class="records-summary">
+          <div class="summary-item">
+            <div class="summary-label">Total Records</div>
+            <div class="summary-value">{{ treatmentRecords.length }}</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-label">Last Treatment</div>
+            <div class="summary-value">{{ treatmentRecords[0].date || 'N/A' }}</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-label">Next Follow-up</div>
+            <div class="summary-value">{{ getNextFollowUp() || 'None scheduled' }}</div>
+          </div>
+        </div>
+
+        <div class="treatment-records-list">
+          <div class="record-item" *ngFor="let record of treatmentRecords; trackBy: trackByRecordId">
+            <div class="record-header">
+              <div class="record-date">
+                <div class="date-text">{{ record.date }}</div>
+              </div>
+              <div class="record-status">
+                <div class="status-badge" [ngClass]="getStatusColor(record.followUpStatus)">
+                  {{ record.followUpStatus }}
+                </div>
+              </div>
+            </div>
+
+            <div class="record-content">
+              <div class="record-section">
+                <div class="section-title">Veterinarian</div>
+                <div class="section-content">{{ record.veterinarian }}</div>
+              </div>
+
+              <div class="record-section">
+                <div class="section-title">Treatment Type</div>
+                <div class="section-content">{{ record.treatmentType }}</div>
+              </div>
+
+              <div class="record-section">
+                <div class="section-title">Diagnosis</div>
+                <div class="section-content">{{ record.diagnosis }}</div>
+              </div>
+
+              <div class="record-section">
+                <div class="section-title">Prescription</div>
+                <div class="section-content">{{ record.prescription }}</div>
+              </div>
+
+              <div class="record-section" *ngIf="record.attachments && record.attachments.length > 0">
+                <div class="section-title">Attachments</div>
+                <div class="attachments-list">
+                  <div class="attachment-item" *ngFor="let attachment of record.attachments">
+                    <div class="attachment-icon">📎</div>
+                    <div class="attachment-name">{{ attachment }}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="record-section" *ngIf="record.notes">
+                <div class="section-title">Notes</div>
+                <div class="section-content notes">{{ record.notes }}</div>
+              </div>
+            </div>
+
+            <div class="record-actions">
+              <div class="view-details-button" 
+                   (click)="onViewTreatmentDetails(record.id)" 
+                   (keydown.enter)="onViewTreatmentDetails(record.id)" 
+                   (keydown.space)="onViewTreatmentDetails(record.id)"
+                   tabindex="0"
+                   role="button"
+                   aria-label="View detailed treatment information">
+                <div class="button-content">
+                  <div class="button-text">View Details</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" *ngIf="!loading && treatmentRecords.length === 0">
+          <div class="empty-icon">📋</div>
+          <div class="empty-title">No Treatment Records</div>
+          <div class="empty-description">This animal doesn't have any treatment records yet.</div>
+          <div class="empty-action">
+            <div class="add-first-treatment-button" 
+                 (click)="onAddNewTreatment()" 
+                 (keydown.enter)="onAddNewTreatment()" 
+                 (keydown.space)="onAddNewTreatment()"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Add first treatment for this animal">
+              <div class="button-content">
+                <div class="button-text">Add First Treatment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

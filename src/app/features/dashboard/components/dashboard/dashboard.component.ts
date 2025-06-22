@@ -14,7 +14,7 @@ import { catchError, finalize, of } from 'rxjs';
 })
 export class DashboardComponent implements OnInit {
   private dashboardService = inject(DashboardService);
-  
+
   public metrics = signal<DashboardMetrics | null>(null);
   public loading = signal(false);
   public error = signal<string | null>(null);
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
       .subscribe(metrics => {
         if (metrics) {
           this.metrics.set(metrics);
-        }
+      }
       });
   }
 }

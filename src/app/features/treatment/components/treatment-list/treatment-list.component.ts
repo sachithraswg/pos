@@ -14,7 +14,10 @@ export class TreatmentListComponent {
     this.router.navigate(['/treatment/add']);
   }
 
-  onViewTreatment(treatmentId: string): void {
-    this.router.navigate(['/treatment', treatmentId]);
+  onViewTreatment(): void {
+    // Navigate to treatment history for the animal associated with this treatment
+    // For now, using a mock animal ID - in a real app, you'd get this from the treatment data
+    const animalId = 'buddy-001'; // This would come from the treatment record
+    this.router.navigate(['/treatment/history', animalId]);
   }
 }

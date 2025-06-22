@@ -43,9 +43,9 @@ A modern Point of Sale system for veterinary clinics built with Angular 20.
    ```
 
 3. **Start development server**
-   ```bash
+```bash
    npm start
-   ```
+```
 
 4. **Open your browser**
    Navigate to `http://localhost:4200`
