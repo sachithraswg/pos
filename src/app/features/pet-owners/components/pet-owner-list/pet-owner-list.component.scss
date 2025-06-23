@@ -308,7 +308,7 @@
   min-width: 288px;
   position: relative;
 }
-.owners {
+.pet-owners {
   color: #0d0f1c;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -344,7 +344,7 @@
   position: relative;
   overflow: hidden;
 }
-.new-owner {
+.new-pet-owner {
   color: #0d0f1c;
   text-align: center;
   font-family: "Inter-Medium", sans-serif;
@@ -522,7 +522,7 @@
   width: 216px;
   position: relative;
 }
-.owner-name {
+.pet-owner-name {
   color: #0d0f1c;
   text-align: left;
   font-family: "Inter-Medium", sans-serif;
@@ -1125,4 +1125,47 @@
   font-weight: 400;
   position: relative;
   align-self: stretch;
+}
+
+// New styles for interactive elements
+.clickable {
+  cursor: pointer;
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #1d4ed8;
+  }
+
+  &:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+.pet-owner-name,
+.pet-owner-phone,
+.pet-owner-email,
+.pet-owner-animals {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.layout-layer6-element04 {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  padding: 4px 8px;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+
+  &:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
 }

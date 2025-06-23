@@ -1,0 +1,127 @@
+<div class="page-wrapper">
+    <div class="page-content">
+      <div class="content-section">
+        <div class="header-bar">
+          <div class="layout-layer3-element0">
+            <div class="layout-layer4-element0">
+              <div class="layout-layer5-element0">
+                <img class="vector-0" src="vector-00.svg" alt="Pet Owner Management Icon" />
+                <div class="layout-layer6-element0"></div>
+              </div>
+            </div>
+            <div class="layout-layer4-element1">
+              <div class="pet-pal">PetPal</div>
+            </div>
+          </div>
+          <div class="layout-layer3-element1">
+            <div class="layout-layer4-element02">
+              <div class="layout-layer5-element02">
+                <div class="layout-layer6-element02">
+                  <div class="layout-layer7-element0">
+                    <img class="vector-02" src="vector-01.svg" alt="Search Icon" />
+                    <div class="layout-layer8-element0"></div>
+                  </div>
+                </div>
+                <div class="layout-layer6-element1">
+                  <div class="search">Search</div>
+                </div>
+              </div>
+            </div>
+            <div class="layout-layer4-element12">
+              <div class="layout-layer5-element03">
+                <div class="layout-layer6-element03">
+                  <img class="vector-03" src="vector-02.svg" alt="Filter Icon" />
+                  <div class="layout-layer7-element02"></div>
+                </div>
+              </div>
+            </div>
+            <img class="layout-layer4-element2" src="layout-layer4-element20.png" alt="Pet Owner Avatar" />
+          </div>
+        </div>
+        <div class="layout-layer2-element1">
+          <div class="layout-layer3-element02">
+            <div class="layout-layer4-element03">
+              <div class="layout-layer5-element04">
+                <div class="pet-owners">Pet Owners</div>
+              </div>
+              <div class="layout-layer5-element1">
+                <div class="layout-layer6-element04" 
+                     (click)="onCreatePetOwner()" 
+                     (keydown.enter)="onCreatePetOwner()" 
+                     (keydown.space)="onCreatePetOwner()"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Create new pet owner">
+                  <div class="new-pet-owner">+ New Pet Owner</div>
+                </div>
+              </div>
+            </div>
+            <div class="layout-layer4-element13">
+              <div class="layout-layer5-element05">
+                <div class="layout-layer6-element05">
+                  <div class="layout-layer7-element03">
+                    <div class="layout-layer8-element02">
+                      <img class="vector-04" src="vector-03.svg" alt="Action Icon" />
+                      <div class="layout-layer9-element0"></div>
+                    </div>
+                  </div>
+                  <div class="layout-layer7-element1">
+                    <div class="search-by-name-or-phone">
+                      Search by name or phone
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout-layer4-element22">
+              <div class="layout-layer5-element06">
+                <div class="layout-layer6-element06">
+                  <div class="layout-layer7-element04">
+                    <div class="layout-layer8-element03">
+                      <div class="layout-layer9-element02">
+                        <div class="pet-owner-name">Pet Owner Name</div>
+                      </div>
+                      <div class="layout-layer9-element1">
+                        <div class="phone">Phone</div>
+                      </div>
+                      <div class="layout-layer9-element2">
+                        <div class="email">Email</div>
+                      </div>
+                      <div class="layout-layer9-element3">
+                        <div class="number-of-animals">Number of Animals</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout-layer7-element12">
+                    <div class="layout-layer8-element04" *ngFor="let petOwner of petOwners; trackBy: trackByPetOwnerId">
+                      <div class="layout-layer9-element03">
+                        <div class="pet-owner-name clickable" 
+                             (click)="onViewPetOwnerDetails(petOwner.id)" 
+                             (keydown.enter)="onViewPetOwnerDetails(petOwner.id)" 
+                             (keydown.space)="onViewPetOwnerDetails(petOwner.id)"
+                             tabindex="0"
+                             role="button"
+                             [attr.aria-label]="'View details for ' + petOwner.name">
+                          {{ petOwner.name }}
+                        </div>
+                      </div>
+                      <div class="layout-layer9-element12">
+                        <div class="pet-owner-phone">{{ petOwner.phone }}</div>
+                      </div>
+                      <div class="layout-layer9-element22">
+                        <div class="pet-owner-email">{{ petOwner.email }}</div>
+                      </div>
+                      <div class="layout-layer9-element32">
+                        <div class="pet-owner-animals">{{ petOwner.numberOfAnimals }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

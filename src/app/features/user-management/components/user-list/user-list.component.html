@@ -5,7 +5,13 @@
                 <div class="users2">Users</div>
             </div>
             <div class="layout-layer5-element1">
-                <div class="layout-layer6-element02">
+                <div class="layout-layer6-element02" 
+                     (click)="onCreateUser()" 
+                     (keydown.enter)="onCreateUser()" 
+                     (keydown.space)="onCreateUser()"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Create new user">
                     <div class="create">Create</div>
                 </div>
             </div>
@@ -51,149 +57,37 @@
                         </div>
                     </div>
                     <div class="layout-layer7-element14">
-                        <div class="layout-layer8-element04">
+                        <div class="layout-layer8-element04" *ngFor="let user of users; trackBy: trackByUserId">
                             <div class="layout-layer9-element04">
-                                <div class="dr-emily-carter">Dr. Emily Carter</div>
+                                <div class="user-name">{{ user.name }}</div>
                             </div>
                             <div class="layout-layer9-element12">
-                                <div class="emily-carter">emily.carter</div>
+                                <div class="user-username clickable" 
+                                     (click)="onViewUserDetails(user.id)" 
+                                     (keydown.enter)="onViewUserDetails(user.id)" 
+                                     (keydown.space)="onViewUserDetails(user.id)"
+                                     tabindex="0"
+                                     role="button"
+                                     [attr.aria-label]="'View details for ' + user.username">
+                                    {{ user.username }}
+                                </div>
                             </div>
                             <div class="layout-layer9-element22">
-                                <div class="emily-carter-petpal-com">
-                                    emily.carter-pawpals.com
-                                </div>
+                                <div class="user-email">{{ user.email }}</div>
                             </div>
                             <div class="layout-layer9-element32">
                                 <div class="layout-layer10-element06">
                                     <div class="layout-layer11-element0">
-                                        <div class="admin">Admin</div>
+                                        <div class="user-role">{{ user.role }}</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="layout-layer9-element42">
                                 <div class="layout-layer10-element06">
                                     <div class="layout-layer11-element0">
-                                        <div class="active">Active</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element52">
-                                <div class="edit-delete">Edit | Delete</div>
-                            </div>
-                        </div>
-                        <div class="layout-layer8-element12">
-                            <div class="layout-layer9-element04">
-                                <div class="dr-david-lee">Dr. David Lee</div>
-                            </div>
-                            <div class="layout-layer9-element12">
-                                <div class="david-lee">david.lee</div>
-                            </div>
-                            <div class="layout-layer9-element22">
-                                <div class="david-lee-petpal-com">
-                                    david.lee-pawpals.com
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element32">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="veterinarian">Veterinarian</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element42">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="active">Active</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element52">
-                                <div class="edit-delete">Edit | Delete</div>
-                            </div>
-                        </div>
-                        <div class="layout-layer8-element2">
-                            <div class="layout-layer9-element04">
-                                <div class="sarah-johnson">Sarah Johnson</div>
-                            </div>
-                            <div class="layout-layer9-element12">
-                                <div class="sarah-johnson2">sarah.johnson</div>
-                            </div>
-                            <div class="layout-layer9-element22">
-                                <div class="sarah-johnson-petpal-com">
-                                    sarah.johnson-pawpals.com
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element32">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="receptionist">Receptionist</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element42">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="active">Active</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element52">
-                                <div class="edit-delete">Edit | Delete</div>
-                            </div>
-                        </div>
-                        <div class="layout-layer8-element3">
-                            <div class="layout-layer9-element04">
-                                <div class="mark-thompson">Mark Thompson</div>
-                            </div>
-                            <div class="layout-layer9-element12">
-                                <div class="mark-thompson2">mark.thompson</div>
-                            </div>
-                            <div class="layout-layer9-element22">
-                                <div class="mark-thompson-petpal-com">
-                                    mark.thompson-pawpals.com
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element32">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="technician">Technician</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element42">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="inactive">Inactive</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element52">
-                                <div class="edit-delete">Edit | Delete</div>
-                            </div>
-                        </div>
-                        <div class="layout-layer8-element4">
-                            <div class="layout-layer9-element04">
-                                <div class="dr-olivia-brown">Dr. Olivia Brown</div>
-                            </div>
-                            <div class="layout-layer9-element12">
-                                <div class="olivia-brown">olivia.brown</div>
-                            </div>
-                            <div class="layout-layer9-element22">
-                                <div class="olivia-brown-petpal-com">
-                                    olivia.brown-pawpals.com
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element32">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="veterinarian">Veterinarian</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layout-layer9-element42">
-                                <div class="layout-layer10-element06">
-                                    <div class="layout-layer11-element0">
-                                        <div class="active">Active</div>
+                                        <div class="user-status" [ngClass]="getStatusClass(user.status)">
+                                            {{ user.status }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

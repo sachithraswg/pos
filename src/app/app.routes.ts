@@ -12,8 +12,7 @@ export const routes: Routes = [
   },
   {
     path: 'users',
-    redirectTo: 'user-management',
-    pathMatch: 'full'
+    loadChildren: () => import('./features/user-management/user-management.routes').then(m => m.USER_MANAGEMENT_ROUTES)
   },
   {
     path: 'user-management',
@@ -32,8 +31,8 @@ export const routes: Routes = [
     loadChildren: () => import('./features/catalog/catalog.routes').then(m => m.CATALOG_ROUTES)
   },
   {
-    path: 'owner',
-    loadChildren: () => import('./features/owner/owner.routes').then(m => m.OWNER_ROUTES)
+    path: 'pet-owners',
+    loadChildren: () => import('./features/pet-owners/pet-owners.routes').then(m => m.PET_OWNERS_ROUTES)
   },
   {
     path: 'reporting',
